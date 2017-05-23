@@ -1,0 +1,5 @@
+print("Integer division gives floating result, 5 / 2: ", 5 / 2)
+print("Integer division can be done by 5 // 2: ", 5 // 2)
+print("Integer division for negative integer round to nearest int, -11 // 2", -11 // 2)
+print("Exponentation is done by ** 11 ** 2: ", 11 ** 2)
+print("Remainder of an operation can be received by % 11 % 2: ", 11 % 2)
