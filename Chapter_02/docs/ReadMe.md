@@ -64,5 +64,40 @@ Python also has a provision for Fractions under the module `fractions`
 * `sin()`, `cos()`, `tan()` all operations are supported.
 * Python does not have infinite precision, `tan(Pi/4)` will give `0.99999999` and not `1.0`
 
+## Lists ##
 
-
+* Python Lists are arrays on steroids.
+* We can create a list like this
+    * `a_list = [1, 2, 3, 4]`
+* A list can be indexed like this
+    * `a_list[0]` returns `1`
+* A negative index access item from the end.
+    * you can do `len(a_list) - index` to get the positive index.
+* Slicing a List
+    * We can slice a list, like this, creates a new list, not changing old values.
+        * `a_list[1:3]`
+    * In the slice if the starts from beginning and end at the last, we can leave that value.
+    * When both slice value are left out, we get a copy of original list
+* List Extensions
+    * We can concate 2 list using a `+` operator.
+    * A list is a hetrogeneous array.
+    * `append()`, adds a single element to the end of the list.
+        * when a list is passed, the complete list is appened as 1 item.
+    * `extend()`, modifies the original list with a new item added.
+        * when a list is extended, it adds individual items to the existing list.
+* Searching
+    * `count()`: returns the number of occurences of a item.
+    * `in` : tells us `True` or `False`, depending on if the item is in the list or not.
+    * `index()` : tells us the index of first occurerence of the item.
+        * It throw a `ValueError` if a item is not present
+* Removing
+    * `del a_list[1]` : deletes the value at index 1
+    * `remove()`: removes a particular item from the list.
+        * it returns a `ValueError` is the item is not present
+    * `pop()`: removes the last items and also returns that item
+    * `pop(1)` : removes the item at the index.
+    * `pop()` on an empty list gives `IndexError`
+* Boolean Context
+    * Empty list returns a `False`
+    * Every thing else will return a `True`
+    * `insert()`, inserts a new item as a defined location.
