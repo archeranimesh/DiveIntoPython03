@@ -166,4 +166,23 @@ Python also has a provision for Fractions under the module `fractions`
     * Empty set returns `False`
     * Every thing else is `True`
 
+## Dictionary ##
+
+* Dictionary is an unordered set of key-value pairs.
+* Dictionary are optimized for retreving values from a key.
+* Dictionary can be created in this manner.
+    * `a_dict = {}` empty Dictionary
+    * `a_dict = {'server': 'myServer'}` Dictionary with a key value pair.
+* Reteriving values
+    * `a_dict['server']`returns `myServer`
+    * Accessing a Dictionary by value causes a `KeyError`
+* Modifying 
+    * `a_dict[`server`] = "newserver"` : creates a new value for the key.
+    * Keys are case sensitive.
+    * Duplicate keys are not possible.
+* Dictionary can have mixed values of int and string.
+* Boolean Context
+    * Empty Dictionary is `False`
+    * Every thing else is `True.`
+
 
