@@ -100,4 +100,26 @@ Python also has a provision for Fractions under the module `fractions`
 * Boolean Context
     * Empty list returns a `False`
     * Every thing else will return a `True`
+
+
+## Tuple ##
+
+* A tuple is a Immutable list.
+* A tuple is defined in this manner.
+    * `a_tuple = (1, 2, 3)`
+* Tuple have the items in a defined order and can be accessed with array indexing
+    * `a_tuple[0]`
+* Negative index, slicing, searching works the same way as list.
+* There is no `append()`, `extend()`, `insert()`, `pop()` and `remove()` attributes in tuple.
+* A list can be converted to a tuple by calling `tuple()`, and passed to a function to prevent any modification.
+* Boolean context also behaves the same manner.
+* Few important things to note are
+    * Tuple are faster than List
+    * Using Tuple makes the code safer, as it provides a write protection
+    * Tuples can also be used as Dictionary key values because of its immutable nature.
+* Tuple with one item is created like this
+    * `a_tuple = (2, )` the comma is added.
+* Tuples can be used to assign multiple values
+    * `(x, y, z) = ("Hello", "World", "!")`
+    * `range()` can be used to intilize multiple values in one place.
     * `insert()`, inserts a new item as a defined location.
