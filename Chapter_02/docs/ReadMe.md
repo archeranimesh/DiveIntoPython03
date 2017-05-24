@@ -185,4 +185,7 @@ Python also has a provision for Fractions under the module `fractions`
     * Empty Dictionary is `False`
     * Every thing else is `True.`
 
+## None ##
+* `None` is a special constant in Python. It is not `0`, it also not `False`
+* Comparing `None` to anything other than `None` results in `False`
 
