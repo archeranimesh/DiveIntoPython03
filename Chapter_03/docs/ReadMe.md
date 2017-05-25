@@ -57,4 +57,10 @@ We also will look through some important module in Python.
 * For a Dictionary containing immutable values, we can use this Comprehensions to convert to a value,key dict.
     * {value:key for key, value in a_dict.items()}
 
-
+## Set Comprehensions ##
+* Set Comprehensions is same as a Dictionary Comprehensions, with the only difference being it stores only values.
+* `{x ** 2 for x in a_set }`
+    * Iterate through a set and store each elements to the power of `2`.
+* `{x **2 for x in a_set if x % 2 == 0 }`
+    * Iterate through each element of the set, filter it if `x` is divisible by `2` and then store the square of the number.
+* Set Comprehensions also works on list and converts it to a set.
