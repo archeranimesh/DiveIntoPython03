@@ -44,3 +44,17 @@ We also will look through some important module in Python.
             * `if` is always evaluated for each element.
         * Multiply the `elem` with `2` and store it.
 * The above are basic building blocks we can create a very complicated list Comprehensions.
+
+
+## Dictionary Comprehensions ##
+* It is same as a List Comprehensions, and creates a Dictionary.
+* `{f:os.stat(f) for f in glob.glob('*.py') }`
+    * In the above code, the surrounding `{}` tells this is a Dictionary.
+    * The Comprehensions starts from `for` loop, where we are taking each file returned by `glob.glob('*.py')`
+    * Then each `f` file is used to create a key, value pair with `f` being the file name, and `:` the `os.stat(f)` as the value.
+* `{f:os.stat(f) for f in glob.glob('*.py') if os.stat(f).st_size > 500}`
+    * Everything is same as above, just the `if` condition is executed for each `f` given by the `for` loop and then filtered based on its size.
+* For a Dictionary containing immutable values, we can use this Comprehensions to convert to a value,key dict.
+    * {value:key for key, value in a_dict.items()}
+
+
